@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+public class Kata
+{
+  public string Rps(string p1, string p2)
+  {
+    var answer = "";
+    
+    if (p1 == "scissors" && p2 == "paper")
+    {
+      answer = "Player 1 won!";
+    }
+      
+   if (p1 == "scissors" && p2 == "rock")
+       {
+     answer =  "Player 2 won!";
+    }
+    if (p1 == "scissors" && p2 == "scissors")
+      {
+      answer = "Draw!";
+      }
+    
+    if (p1 == "paper" && p2 == "rock")
+      {
+      answer = "Player 1 won!";
+      }
+    
+    if (p1 == "paper" && p2 == "paper")
+      {
+      answer = "Draw!";
+      }
+    
+    if (p1 == "paper" && p2 == "scissors")
+      {
+      answer = "Player 1 won!";
+      }
+    
+    if (p1 == "rock" && p2 == "rock")
+      {
+      answer = "Draw!";
+      }
+    
+    if (p1 == "rock" && p2 == "paper")
+      {
+      answer = "Player 2 won!";
+      }
+    
+    if (p1 == "rock" && p2 == "scissors")
+      {
+      answer = "Player 1 won!";
+      }
+    if (p1 == "paper" && p2 == "scissors")
+      {
+      answer = "Player 2 won!";
+    }
+      return answer;
+  }
+  
+}
